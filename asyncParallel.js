@@ -28,3 +28,27 @@ async.parallel(TaskArr,(err,value) => {
     //now if you pass the error inside the method 1 call back it would just print null.
 
 })
+
+
+//using object
+
+const taskObj = {}
+
+taskObj.getUserName = (cb) => {
+    cb(null,'inside getUserName')
+    // cb('ERROR',null)
+}
+
+taskObj.getAge = (cb) => {
+    cb(null,'inside getAge')
+}
+
+taskObj.getPhoneNum = (cb) => {
+    cb(null,'inside getPhoneNum')
+}
+async.parallel(taskObj,(err,value)=> {
+    if(err) {
+        console.log('err')
+    }
+    console.log('value ->',value)
+})
