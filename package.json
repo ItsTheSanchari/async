@@ -1,13 +1,21 @@
 {
   "name": "async-queue",
   "version": "1.0.0",
-  "description": "async queue",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItsTheSanchari/async.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ItsTheSanchari/async/issues"
+  },
+  "homepage": "https://github.com/ItsTheSanchari/async#readme",
   "dependencies": {
     "async": "^3.2.0",
     "lodash": "^4.17.21"
